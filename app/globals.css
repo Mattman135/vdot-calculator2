@@ -1,2 +1,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+body {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  font-family: "Roboto";
+}
