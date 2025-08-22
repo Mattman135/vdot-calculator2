@@ -51,7 +51,7 @@ export async function estimate(minutes, seconds) {
   }
 
   return {
-    "Half marathon time": closestRow["Estimated Half marathon"],
+    "Your estimated half marathon time": closestRow["Estimated Half marathon"],
     "Easy pace (per mile)": closestRow["Easy_long_pace_Mile"],
     "Easy pace (per km)": closestRow["Easy_long_pace_km"],
     "Marathon pace (per mile)": closestRow["marathon_pace_Mile"],
