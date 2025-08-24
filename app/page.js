@@ -122,49 +122,6 @@ export default function Home() {
             </div>
           ))}
       </div>
-
-      {/* LACTATE HEART RATE ZONES */}
-      <h1 className="text-4xl font-bold">Input your heart rate here</h1>
-      <div className="flex flex-row gap-2">
-        <div className="flex flex-col justify-around">
-          <div></div>
-          <p className="text-gray-500 italic">Heart Rate Result</p>
-        </div>
-
-        <div className="gap-2">
-          <input
-            type="number"
-            placeholder="Heart Rate"
-            value={lthr}
-            className="input"
-            onChange={(e) => setLthr(e.target.value)}
-          />
-        </div>
-      </div>
-
-      <button onClick={calculateZones} className="btn">
-        Fetch Estimates
-      </button>
-
-      <h3 className="text-xl font-bold italic flex items-end">
-        <span className="underline">Your</span> &nbsp; Lactate Threshold Heart
-        Rate Zones are
-      </h3>
-      <div className="min-h-115">
-        {zones.length > 0 && (
-          <div>
-            {zones.map((zone, idx) => (
-              <div key={idx} className="flex items-end">
-                <strong className="p-0 m-0">{zone.name}</strong>
-                &nbsp;
-                <div className="italic text-amber-600 p-0 m-0">
-                  {zone.range}
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-      </div>
     </div>
   )
 }
